@@ -19,7 +19,7 @@ def write_bytes(s, out, encoding="utf-8"):
                 out.write(bytes(s, encoding))
         else:
             out.write(s)
-    except IOError as bpe:
+    except IOError:
         exit()
 
 def termsize():
